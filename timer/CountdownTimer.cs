@@ -17,7 +17,7 @@ public class CountdownTimer : MonoBehaviour
     void Update()
     {
         // currentTime -= 1 does by each frame...bad
-        currentTime -= 1 * currentTime.deltaTime; // decreases by 1 each second instead
+        currentTime -= 1 * Time.deltaTime; // decreases by 1 each second instead
         print (currentTime);
     }
 }
